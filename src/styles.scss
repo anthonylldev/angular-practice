@@ -1,1 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* We globally define the variables of the colors of the app  */
+:root {
+  --primary-color: #FF6047;
+  --background-color: #1D1D1D;
+  --background-variant-color: #181818;
+  --on-background-color: #FFFFFF;
+}
+
+/* Import OpenSans Font */
+@font-face {
+  font-family: openSans, sans-serif;
+  src: url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}

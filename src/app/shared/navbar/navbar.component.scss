@@ -1,0 +1,84 @@
+.container-fluid {
+  background-color: var(--background-variant-color);
+
+  .container-lg {
+    .navbar {
+      .active {
+        a {
+          color: var(--primary-color);
+          transition: none;
+        }
+      }
+
+      a {
+        color: var(--on-background-color);
+        text-decoration: none;
+        font-size: 1.2em;
+      }
+
+      .navbar-toggler {
+        padding: 4px 0;
+
+        button {
+          border: 0;
+          color: var(--on-background-color);
+          background-color: var(--background-variant-color);
+        }
+
+        span {
+          padding: 5px;
+          color: white;
+        }
+      }
+
+      #navBarList01 {
+        color: var(--on-background-color);
+
+        .navbar-nav {
+          .nav-item {
+            &:hover {
+              a {
+                transition: .3s ease-in;
+
+                color: white;
+                text-shadow: 0 0 5px var(--primary-color),
+                0 0 10px var(--primary-color);
+              }
+            }
+          }
+        }
+      }
+
+      #company-brand {
+        .navbar-brand {
+          margin: 0;
+          font-size: 1.6em;
+          font-weight: bold
+        }
+      }
+
+      #navBarList02 {
+        color: var(--on-background-color);
+
+        .navbar-nav {
+          .dropdown {
+            .dropdown-menu {
+              a {
+                color: black;
+              }
+            }
+          }
+
+          .nav-item {
+            .nav-link {
+              .icon-name {
+                font-size: 1em;
+                padding: 0 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
