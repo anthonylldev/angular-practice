@@ -48,6 +48,10 @@
       display: flex;
       justify-content: center;
       width: 100%;
+
+      .media-links {
+        padding: 0;
+      }
     }
   }
 }
