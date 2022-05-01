@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {
-  faUser, faSearch, faShoppingCart,
-  faBars
+  faUser, faSearch, faShoppingCart, faBars
 } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
