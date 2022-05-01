@@ -1,0 +1,57 @@
+<div class="container-fluid">
+  <div class="container">
+    <div class="row catalog-nav justify-content-center">
+      <div class="col-lg-3">
+        <a class="btn men-button" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample1" aria-expanded="false" aria-controls="multiCollapseExample1">Men</a>
+      </div>
+      <div class="col-lg-3">
+        <a class="btn categories-button" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Categories.</a>
+      </div>
+      <div class="col-lg-3">
+        <a class="btn women-button" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Women</a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <div class="collapse multi-collapse" id="multiCollapseExample1">
+          <div class="card card-body">
+            <ul>
+              <li class="nav-item">
+                <a class="nav-link" [routerLink]="['/catalog/men']" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">All</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" [routerLink]="['/catalog/men']" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Tshirts</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" [routerLink]="['/catalog/men']" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Jeans</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" [routerLink]="['/catalog/men']" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Shoes</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="collapse multi-collapse" id="multiCollapseExample2">
+          <div class="card card-body">
+            <ul>
+              <li class="nav-item">
+                <a class="nav-link" [routerLink]="['/catalog/women']" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">All</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" [routerLink]="['/catalog/women']" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Tshirts</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" [routerLink]="['/catalog/women']" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Jeans</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" [routerLink]="['/catalog/women']" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Shoes</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
