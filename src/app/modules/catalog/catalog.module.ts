@@ -3,9 +3,10 @@ import { CommonModule } from '@angular/common';
 
 import { CatalogRoutingModule } from './catalog-routing.module';
 import { CatalogComponent } from './catalog.component';
-import { MenComponent } from './men/men.component';
-import { WomenComponent } from './women/women.component';
-import { NavbarCatalogComponent } from './navbar-catalog/navbar-catalog.component';
+import { MenComponent } from './pages/men/men.component';
+import { WomenComponent } from './pages/women/women.component';
+import { NavbarCatalogComponent } from '../../shared/navbar-catalog/navbar-catalog.component';
+import { ItemComponent } from './components/item/item.component';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { NavbarCatalogComponent } from './navbar-catalog/navbar-catalog.componen
     CatalogComponent,
     MenComponent,
     WomenComponent,
-    NavbarCatalogComponent
+    NavbarCatalogComponent,
+    ItemComponent
   ],
   imports: [
     CommonModule,
