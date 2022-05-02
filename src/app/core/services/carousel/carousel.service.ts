@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from "@angular/common/http";
-import {IImage} from "../interfaces/image.iterface";
+import {IImage} from "../../interfaces/image.iterface";
 import {Observable} from "rxjs";
 
 @Injectable({

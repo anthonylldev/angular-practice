@@ -1,8 +1,9 @@
 import {Component, Input, OnInit} from '@angular/core';
+import {Router} from "@angular/router";
 import {IItem} from "../../../../core/interfaces/item.interface";
 import {faHeart as faHeartSelected} from "@fortawesome/free-solid-svg-icons";
 import {faHeart as faHeartUnselected} from "@fortawesome/free-regular-svg-icons";
-import { registerLocaleData } from "@angular/common";
+import {registerLocaleData} from "@angular/common";
 import localeES from '@angular/common/locales/es';
 
 registerLocaleData(localeES);
@@ -18,7 +19,10 @@ export class ItemComponent implements OnInit {
   faHeartUnselected = faHeartUnselected;
   @Input() simpleItem?: IItem
 
-  constructor() { }
+  constructor(
+    private router: Router
+  ) {
+  }
 
   ngOnInit(): void {
   }
@@ -31,5 +35,11 @@ export class ItemComponent implements OnInit {
 
   isDiscounted(): boolean {
     return !!this.simpleItem?.discount;
+  }
+
+  navToItem(): void {
+    if (this.simpleItem) {
+      this.router.navigate(['item', this.simpleItem.id]);
+    }
   }
 }

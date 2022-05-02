@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {IItem} from "../../core/interfaces/item.interface";
-import {ItemService} from "../../core/services/item.service";
+import {ItemService} from "../../core/services/item/item.service";
 import {SimpleItem} from "../../core/models/simpleItem.model";
 
 @Component({
@@ -25,7 +25,7 @@ export class CatalogComponent implements OnInit {
       (data) => {
         data.forEach((item) => {
           const addItem: IItem = new SimpleItem(
-            item.name, item.image, item.price, item.discount, item.favourite
+            item.id, item.name, item.image, item.price, item.discount, item.favourite
           )
           this.items.push(addItem);
         })

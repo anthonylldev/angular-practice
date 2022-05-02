@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {CarouselService} from "../core/services/carousel.service";
+import {CarouselService} from "../core/services/carousel/carousel.service";
 import {Base64Image} from "../core/models/base64.model";
 import {IImage} from "../core/interfaces/image.iterface";
 
