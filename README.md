@@ -2,6 +2,14 @@
 
 *Author*: Anthony Fabian Leon Lucero
 
+## Importante:
+Esta práctica en principio era para el lunes por lo que hay un commit
+con una etiqueta ***FIN_EJERCICIO_DENTRO_DE_PLAZO*** que está dentro de plazo,
+pero he realizado un par de commits más para mejorar el project final
+por si sirviera para subir nota. Recalco que esos commits son solo para subir nota
+en el caso de que se pudiera, en caso contrario centrarse en la etiqueta
+anteriormente nombrada.
+
 ## Folder structure
 
 ### Core
