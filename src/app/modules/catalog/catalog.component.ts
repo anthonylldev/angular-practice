@@ -9,8 +9,8 @@ import {SimpleItem} from "../../core/models/simpleItem.model";
   styleUrls: ['./catalog.component.scss']
 })
 export class CatalogComponent implements OnInit {
-  items: IItem[] = [];
   title: string = "Most sales";
+  items: IItem[] = [];
 
   constructor(
     private itemService: ItemService
