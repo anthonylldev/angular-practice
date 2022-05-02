@@ -39,7 +39,7 @@ export class ItemComponent implements OnInit {
 
   navToItem(): void {
     if (this.simpleItem) {
-      this.router.navigate(['item', this.simpleItem.id]);
+      this.router.navigate(['catalog/item-extended', this.simpleItem.id]);
     }
   }
 }

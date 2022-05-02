@@ -1,0 +1,152 @@
+[
+  {
+    "id": 1,
+    "name": "Eazy-E T-Shirt",
+    "price": 15.99,
+    "discount": 9.99,
+    "image": {
+      "src": "",
+      "alt": "image"
+    },
+    "image-xs": {
+      "src": "",
+      "alt": "xs-image"
+    },
+    "favourite": false,
+    "color": [
+      "black",
+      "white"
+    ],
+    "size": [
+      "3xs",
+      "2xs",
+      "xs",
+      "sm",
+      "md",
+      "lg",
+      "xl",
+      "2xl",
+      "3xl"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Eazy-E T-Shirt",
+    "price": 15.99,
+    "discount": 9.99,
+    "image": {
+      "src": "",
+      "alt": "image"
+    },
+    "image-xs": {
+      "src": "",
+      "alt": "xs-image"
+    },
+    "favourite": false,
+    "color": [
+      "black",
+      "white"
+    ],
+    "size": [
+      "3xs",
+      "2xs",
+      "xs",
+      "sm",
+      "md",
+      "lg",
+      "xl",
+      "2xl",
+      "3xl"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Eazy-E T-Shirt",
+    "price": 15.99,
+    "discount": 9.99,
+    "image": {
+      "src": "",
+      "alt": "image"
+    },
+    "image-xs": {
+      "src": "",
+      "alt": "xs-image"
+    },
+    "favourite": false,
+    "color": [
+      "black",
+      "white"
+    ],
+    "size": [
+      "3xs",
+      "2xs",
+      "xs",
+      "sm",
+      "md",
+      "lg",
+      "xl",
+      "2xl",
+      "3xl"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Eazy-E T-Shirt",
+    "price": 15.99,
+    "discount": 9.99,
+    "image": {
+      "src": "",
+      "alt": "image"
+    },
+    "image-xs": {
+      "src": "",
+      "alt": "xs-image"
+    },
+    "favourite": false,
+    "color": [
+      "black",
+      "white"
+    ],
+    "size": [
+      "3xs",
+      "2xs",
+      "xs",
+      "sm",
+      "md",
+      "lg",
+      "xl",
+      "2xl",
+      "3xl"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Eazy-E T-Shirt",
+    "price": 15.99,
+    "discount": 9.99,
+    "image": {
+      "src": "",
+      "alt": "image"
+    },
+    "image-xs": {
+      "src": "",
+      "alt": "xs-image"
+    },
+    "favourite": false,
+    "color": [
+      "black",
+      "white"
+    ],
+    "size": [
+      "3xs",
+      "2xs",
+      "xs",
+      "sm",
+      "md",
+      "lg",
+      "xl",
+      "2xl",
+      "3xl"
+    ]
+  }
+]

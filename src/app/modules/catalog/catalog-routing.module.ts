@@ -7,7 +7,8 @@ import {WomenComponent} from "./pages/women/women.component";
 const routes: Routes = [
   { path: '', component: CatalogComponent },
   { path: 'men', component: MenComponent},
-  { path: 'women', component: WomenComponent}
+  { path: 'women', component: WomenComponent},
+  { path: 'item-extended/:idItem', loadChildren: () => import('../../modules/item-extended/item-extended.module').then(m => m.ItemExtendedModule) }
 ];
 
 @NgModule({
