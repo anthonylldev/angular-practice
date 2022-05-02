@@ -6,6 +6,12 @@
     margin-top: 135px;
     text-align: center;
   }
+
+  @media (max-width: 992px) {
+    h1 {
+      font-size: 8em;
+    }
+  }
 }
 
 .navbar-catalog-container {

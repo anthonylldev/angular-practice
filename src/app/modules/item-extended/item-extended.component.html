@@ -5,67 +5,68 @@
         <img [src]="'data:image/webp;base64,'+item.image.src" [alt]="item.image.alt" class="img-fluid">
       </div>
       <div class="col-lg-5">
-        <div class="row">
-          <h2>{{item.name}}</h2>
-          <p class="card-text" [ngClass]="isDiscounted() ? 'discount' : ''">
-            <span class="price">{{item.price | number:'1.0-2':'es-ES'}} €</span>
-            <span *ngIf="isDiscounted()" class="discount-price">{{item.discount | number:'1.0-2':'es-ES'}} €</span>
-          </p>
-        </div>
-        <div class="row">
-          <p class="color-title">Color:<span>{{colorSelected}}</span></p>
-          <p>
-            <a class="btn btn-primary btn-color" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-              <img [src]="'data:image/webp;base64,'+item.imageXS.src" [alt]="item.imageXS.alt">
-            </a>
-          </p>
-          <div class="collapse" id="collapseExample">
-            <div class="card card-body">
-              <div class="row">
-                <div class="col" *ngFor="let color of item.colors" (click)="changeColor(color)">
-                  {{color | titlecase}}
-                </div>
+        <h2>{{item.name}}</h2>
+        <p class="card-text" [ngClass]="isDiscounted() ? 'discount' : ''">
+          <span class="price">{{item.price | number:'1.0-2':'es-ES'}} €</span>
+          <span *ngIf="isDiscounted()" class="discount-price">{{item.discount | number:'1.0-2':'es-ES'}} €</span>
+        </p>
+        <p class="color-title">Color:<span>{{colorSelected}}</span></p>
+        <p>
+          <a class="btn btn-primary btn-color" data-bs-toggle="collapse" href="#collapseExample" role="button"
+             aria-expanded="false" aria-controls="collapseExample">
+            <img [src]="'data:image/webp;base64,'+item.imageXS.src" [alt]="item.imageXS.alt">
+          </a>
+        </p>
+        <div class="collapse" id="collapseExample">
+          <div class="card card-body">
+            <div class="row">
+              <div class="col" *ngFor="let color of item.colors" (click)="changeColor(color)">
+                {{color | titlecase}}
               </div>
             </div>
           </div>
         </div>
-        <div class="row">
-          <p class="size-title">Size: <span>{{sizeSelected}}</span></p>
-          <div class="row sizes-container">
-            <div class="col-lg-2" *ngFor="let i of staticSizes">
-              <button [ngClass]="isSizeAvailable(i) ? 'available':'notAvailable'" (click)="changeSize(i)">
-                {{i}}
-              </button>
-            </div>
+        <p class="size-title">Size: <span>{{sizeSelected}}</span></p>
+        <div class="row sizes-container">
+          <div class="col-lg-2 col-md-2 col-sm-2 col-2" *ngFor="let i of staticSizes">
+            <button [ngClass]="isSizeAvailable(i) ? 'available':'notAvailable'" (click)="changeSize(i)">
+              {{i}}
+            </button>
           </div>
         </div>
         <div class="row">
           <div class="row justify-content-between buttons-container">
             <div class="col-lg-5">
-              <button class="addCart"><fa-icon [icon]="faShoppingCart"></fa-icon>Add to cart!</button>
+              <button class="addCart">
+                <fa-icon [icon]="faShoppingCart"></fa-icon>
+                Add to cart!
+              </button>
             </div>
             <div class="col-lg-5">
-              <button class="addWishlist">Add to wishlist!<fa-icon [icon]="faHeart"></fa-icon></button>
+              <button class="addWishlist">Add to wishlist!
+                <fa-icon [icon]="faHeart"></fa-icon>
+              </button>
             </div>
           </div>
         </div>
-        <div class="row">
-          <p class="outStock">Is your size/color sold out? <span>Join the Wait List!</span></p>
-          <div class="row social-icons">
-            <div class="col-lg-2 title"><p>Share:</p></div>
-            <div class="col-lg-1 ico"><fa-icon [icon]="faTwitter"></fa-icon></div>
-            <div class="col-lg-1 ico"><fa-icon [icon]="faFacebookF"></fa-icon></div>
-            <div class="col-lg-1 ico"><fa-icon [icon]="faPinterestP"></fa-icon></div>
+        <p class="outStock">Is your size/color sold out? <span>Join the Wait List!</span></p>
+        <div class="row social-icons">
+          <div class="col-lg-2 col-md-2 title"><p>Share:</p></div>
+          <div class="col-lg-4">
+            <ul>
+              <li><fa-icon [icon]="faTwitter"></fa-icon></li>
+              <li><fa-icon [icon]="faFacebookF"></fa-icon></li>
+              <li><fa-icon [icon]="faPinterestP"></fa-icon></li>
+            </ul>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="container not-found" *ngIf="!item">
-    <div class="row align-content-center">
-      <div class="col-lg-12">
-        <h1>Item {{idItem}} not found</h1>
+    <div class="container not-found" *ngIf="!item">
+      <div class="row align-content-center">
+        <div class="col-lg-12">
+          <h1>Item {{idItem}} not found</h1>
+        </div>
       </div>
     </div>
   </div>
-</div>
