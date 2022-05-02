@@ -10,6 +10,7 @@ import {SimpleItem} from "../../core/models/simpleItem.model";
 })
 export class CatalogComponent implements OnInit {
   items: IItem[] = [];
+  title: string = "Most sales";
 
   constructor(
     private itemService: ItemService

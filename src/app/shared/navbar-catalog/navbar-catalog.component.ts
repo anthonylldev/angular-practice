@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-navbar-catalog',
@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./navbar-catalog.component.scss']
 })
 export class NavbarCatalogComponent implements OnInit {
+  @Input() title?: string;
 
   constructor() { }
 

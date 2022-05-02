@@ -1,7 +1,43 @@
-.catalog-nav {
-  text-align: center;
-
-  a {
+.page-title {
+  h1 {
     color: var(--on-background-color);
+    font-weight: bold;
+    font-size: 10em;
+    margin-top: 135px;
+    text-align: center;
   }
 }
+
+.navbar-catalog-container {
+  background-color: var(--primary-color);
+
+  .catalog-nav {
+    text-align: center;
+
+    a {
+      color: black;
+      font-weight: bold;
+    }
+  }
+
+  .card-body {
+    padding: 10px;
+
+    ul {
+      list-style: none;
+
+      a {
+        color: black;
+      }
+    }
+
+    .men {
+      text-align: start;
+    }
+
+    .women {
+      text-align: end;
+    }
+  }
+}
+

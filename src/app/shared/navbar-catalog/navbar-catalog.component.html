@@ -1,4 +1,9 @@
-<div class="container-fluid">
+<div class="container" *ngIf="title">
+  <div class="row page-title">
+    <h1>{{title}}</h1>
+  </div>
+</div>
+<div class="container-fluid navbar-catalog-container">
   <div class="container">
     <div class="row catalog-nav justify-content-center">
       <div class="col-lg-3">
@@ -15,7 +20,7 @@
       <div class="col">
         <div class="collapse multi-collapse" id="multiCollapseExample1">
           <div class="card card-body">
-            <ul>
+            <ul class="men">
               <li class="nav-item">
                 <a class="nav-link" [routerLink]="['/catalog/men']" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">All</a>
               </li>
@@ -35,7 +40,7 @@
       <div class="col">
         <div class="collapse multi-collapse" id="multiCollapseExample2">
           <div class="card card-body">
-            <ul>
+            <ul class="women">
               <li class="nav-item">
                 <a class="nav-link" [routerLink]="['/catalog/women']" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">All</a>
               </li>
