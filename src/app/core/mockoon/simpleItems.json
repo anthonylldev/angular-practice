@@ -1,0 +1,52 @@
+[
+  {
+    "name": "Eazy-E T-Shirt",
+    "price": 15.99,
+    "discount": 9.99,
+    "image": {
+      "src": "",
+      "alt": ""
+    },
+    "favourite": false
+  },
+  {
+    "name": "Aaliyah print short-sleeved T-shirt\n",
+    "price": 15.99,
+    "discount": 9.99,
+    "image": {
+      "src": "",
+      "alt": ""
+    },
+    "favourite": false
+  },
+  {
+    "name": "Ripped vintage effect straight jeans\n",
+    "price": 35.99,
+    "discount": 0,
+    "image": {
+      "src": "",
+      "alt": ""
+    },
+    "favourite": false
+  },
+  {
+    "name": "Jeans mom slim confort",
+    "price": 19.99,
+    "discount": 0,
+    "image": {
+      "src": "",
+      "alt": ""
+    },
+    "favourite": false
+  },
+  {
+    "name": "Ripped mom jeans",
+    "price": 11.11,
+    "discount": 0,
+    "image": {
+      "src": "",
+      "alt": ""
+    },
+    "favourite": false
+  }
+]
