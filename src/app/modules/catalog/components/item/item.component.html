@@ -16,7 +16,7 @@
     <h5 class="card-title">{{simpleItem.name}}</h5>
     <p class="card-text" [ngClass]="isDiscounted() ? 'discount' : ''">
       <span class="price">{{simpleItem.price | number:'1.0-2':'es-ES'}} €</span>
-      <span *ngIf="isDiscounted()" class="discount-price">{{simpleItem.discount}} €</span>
+      <span *ngIf="isDiscounted()" class="discount-price">{{simpleItem.discount | number:'1.0-2':'es-ES'}} €</span>
     </p>
   </div>
 </div>

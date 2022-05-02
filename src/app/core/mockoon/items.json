@@ -8,24 +8,22 @@
       "src": "",
       "alt": "image"
     },
-    "image-xs": {
+    "imageXS": {
       "src": "",
       "alt": "xs-image"
     },
     "favourite": false,
-    "color": [
+    "colors": [
       "black",
       "white"
     ],
-    "size": [
+    "sizes": [
       "3xs",
-      "2xs",
       "xs",
       "sm",
       "md",
       "lg",
       "xl",
-      "2xl",
       "3xl"
     ]
   },
@@ -38,22 +36,17 @@
       "src": "",
       "alt": "image"
     },
-    "image-xs": {
+    "imageXS": {
       "src": "",
       "alt": "xs-image"
     },
     "favourite": false,
-    "color": [
+    "colors": [
       "black",
       "white"
     ],
-    "size": [
+    "sizes": [
       "3xs",
-      "2xs",
-      "xs",
-      "sm",
-      "md",
-      "lg",
       "xl",
       "2xl",
       "3xl"
@@ -68,22 +61,16 @@
       "src": "",
       "alt": "image"
     },
-    "image-xs": {
+    "imageXS": {
       "src": "",
       "alt": "xs-image"
     },
     "favourite": false,
-    "color": [
+    "colors": [
       "black",
       "white"
     ],
-    "size": [
-      "3xs",
-      "2xs",
-      "xs",
-      "sm",
-      "md",
-      "lg",
+    "sizes": [
       "xl",
       "2xl",
       "3xl"
@@ -98,16 +85,16 @@
       "src": "",
       "alt": "image"
     },
-    "image-xs": {
+    "imageXS": {
       "src": "",
       "alt": "xs-image"
     },
     "favourite": false,
-    "color": [
+    "colors": [
       "black",
       "white"
     ],
-    "size": [
+    "sizes": [
       "3xs",
       "2xs",
       "xs",
@@ -128,16 +115,16 @@
       "src": "",
       "alt": "image"
     },
-    "image-xs": {
+    "imageXS": {
       "src": "",
       "alt": "xs-image"
     },
     "favourite": false,
-    "color": [
+    "colors": [
       "black",
       "white"
     ],
-    "size": [
+    "sizes": [
       "3xs",
       "2xs",
       "xs",
