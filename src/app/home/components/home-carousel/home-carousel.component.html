@@ -1,11 +1,8 @@
-<div class="carousel-container">
+<div class="carousel-container" *ngIf="images">
   <div id="carouselExampleControls" class="carousel slide 100-px.wide" data-bs-ride="carousel">
     <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="https://source.unsplash.com/random" class="d-block w-100 img-fluid" alt="">
-      </div>
-      <div class="carousel-item">
-        <img src="https://source.unsplash.com/random" class="d-block w-100 img-fluid" alt="">
+      <div class="carousel-item" [ngClass]="i.alt == 'active' ? 'active' : ''" *ngFor="let i of images">
+        <img [src]="'data:image/webp;base64,'+i.src" class="d-block w-100 img-fluid" [alt]="i.alt">
       </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"

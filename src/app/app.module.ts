@@ -9,6 +9,8 @@ import { NavbarComponent } from './shared/navbar/navbar.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { FooterComponent } from './shared/footer/footer.component';
 import { HomeCarouselComponent } from './home/components/home-carousel/home-carousel.component';
+import { HomeCategoryComponent } from './home/components/home-category/home-category.component';
+import { HomeBannerComponent } from './home/components/home-banner/home-banner.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +19,8 @@ import { HomeCarouselComponent } from './home/components/home-carousel/home-caro
     NavbarComponent,
     FooterComponent,
     HomeCarouselComponent,
+    HomeCategoryComponent,
+    HomeBannerComponent,
   ],
   imports: [
     BrowserModule,

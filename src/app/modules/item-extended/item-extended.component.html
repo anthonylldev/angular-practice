@@ -2,7 +2,7 @@
   <div class="container item-container" *ngIf="item">
     <div class="row justify-content-between">
       <div class="col-lg-5">
-        <img [src]="item.image.src" [alt]="item.image.alt" class="img-fluid">
+        <img [src]="'data:image/webp;base64,'+item.image.src" [alt]="item.image.alt" class="img-fluid">
       </div>
       <div class="col-lg-5">
         <div class="row">
@@ -15,8 +15,8 @@
         <div class="row">
           <p class="color-title">Color:<span>{{colorSelected}}</span></p>
           <p>
-            <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-              <img [src]="item.imageXS.src" [alt]="item.imageXS.alt">
+            <a class="btn btn-primary btn-color" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+              <img [src]="'data:image/webp;base64,'+item.imageXS.src" [alt]="item.imageXS.alt">
             </a>
           </p>
           <div class="collapse" id="collapseExample">

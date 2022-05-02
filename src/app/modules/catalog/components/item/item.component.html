@@ -2,7 +2,7 @@
   <div class="img-container">
     <div class="row images">
       <div>
-        <img [src]="simpleItem.image.src" class="card-img img-fluid" [alt]="simpleItem.image.alt">
+        <img [src]="'data:image/webp;base64,'+simpleItem.image.src" class="card-img img-fluid" [alt]="simpleItem.image.alt">
       </div>
     </div>
   </div>

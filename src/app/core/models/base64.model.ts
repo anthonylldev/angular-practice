@@ -4,8 +4,8 @@ export class Base64Image implements IImage{
   src: string;
   alt: string;
 
-  constructor(base64: string, alt: string) {
-    this.src = base64;
+  constructor(src: string, alt: string) {
+    this.src = src;
     this.alt = alt;
   }
 }

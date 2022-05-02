@@ -1,0 +1,6 @@
+<div class="category-item" *ngIf="category">
+  <a href="">
+    <img class="img-fluid" [src]="'data:image/webp;base64,'+category.image.src" [alt]="category.image.alt">
+  </a>
+  <h3>{{category.categoryTitle}}</h3>
+</div>

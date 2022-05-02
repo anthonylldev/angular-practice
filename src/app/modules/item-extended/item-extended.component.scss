@@ -157,6 +157,19 @@
 
       }
     }
+
+    .btn-color {
+      height: 100px;
+      width: 100px;
+      padding: 0;
+      border: 0;
+      background-color: transparent;
+
+      img {
+        max-height: 100%;
+        max-width: 100%;
+      }
+    }
   }
 }
 
