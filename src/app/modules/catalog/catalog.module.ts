@@ -7,6 +7,7 @@ import { MenComponent } from './pages/men/men.component';
 import { WomenComponent } from './pages/women/women.component';
 import { NavbarCatalogComponent } from '../../shared/navbar-catalog/navbar-catalog.component';
 import { ItemComponent } from './components/item/item.component';
+import {FontAwesomeModule} from "@fortawesome/angular-fontawesome";
 
 
 @NgModule({
@@ -17,9 +18,10 @@ import { ItemComponent } from './components/item/item.component';
     NavbarCatalogComponent,
     ItemComponent
   ],
-  imports: [
-    CommonModule,
-    CatalogRoutingModule
-  ]
+    imports: [
+        CommonModule,
+        CatalogRoutingModule,
+        FontAwesomeModule
+    ]
 })
 export class CatalogModule { }

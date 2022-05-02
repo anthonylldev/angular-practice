@@ -8,12 +8,4 @@ export class Base64Image implements IImage{
     this.src = base64;
     this.alt = alt;
   }
-
-  public getSrc(): string {
-    return this.src;
-  }
-
-  public getAlt(): string {
-    return this.alt;
-  }
 }

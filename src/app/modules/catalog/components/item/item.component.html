@@ -1,1 +1,22 @@
-<p>item works!</p>
+<div class="card bg-white" *ngIf="simpleItem">
+  <div class="img-container">
+    <div class="row images">
+      <div>
+        <img [src]="simpleItem.image.src" class="card-img img-fluid" [alt]="simpleItem.image.alt">
+      </div>
+    </div>
+  </div>
+  <div class="card-img-overlay">
+    <button (click)="clickFavouriteIcon()">
+      <fa-icon [icon]="faHeartSelected" *ngIf="simpleItem.favourite" class="selected"></fa-icon>
+      <fa-icon [icon]="faHeartUnselected" *ngIf="!simpleItem.favourite"></fa-icon>
+    </button>
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">{{simpleItem.name}}</h5>
+    <p class="card-text" [ngClass]="isDiscounted() ? 'discount' : ''">
+      <span class="price">{{simpleItem.price | number:'1.0-2':'es-ES'}} €</span>
+      <span *ngIf="isDiscounted()" class="discount-price">{{simpleItem.discount}} €</span>
+    </p>
+  </div>
+</div>
