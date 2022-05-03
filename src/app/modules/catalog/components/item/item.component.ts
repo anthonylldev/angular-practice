@@ -27,7 +27,8 @@ export class ItemComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  clickFavouriteIcon() {
+  clickFavouriteIcon(event: Event) {
+    event.stopPropagation();
     if (this.simpleItem) {
       this.simpleItem.favourite = !this.simpleItem.favourite
     }

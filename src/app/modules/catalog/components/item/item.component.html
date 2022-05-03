@@ -7,7 +7,7 @@
     </div>
   </div>
   <div class="card-img-overlay">
-    <button (click)="clickFavouriteIcon()">
+    <button (click)="clickFavouriteIcon($event)">
       <fa-icon [icon]="faHeartSelected" *ngIf="simpleItem.favourite" class="selected"></fa-icon>
       <fa-icon [icon]="faHeartUnselected" *ngIf="!simpleItem.favourite"></fa-icon>
     </button>
