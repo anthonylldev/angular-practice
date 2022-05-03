@@ -1,0 +1,16 @@
+.page-title {
+  border-bottom: 40px solid var(--primary-color);
+  h1 {
+    color: var(--on-background-color);
+    font-weight: bold;
+    font-size: 10em;
+    margin-top: 135px;
+    text-align: center;
+  }
+
+  @media (max-width: 992px) {
+    h1 {
+      font-size: 8em;
+    }
+  }
+}

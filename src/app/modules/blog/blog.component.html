@@ -1,5 +1,14 @@
-<div class="container-fluid">
+<div class="container-fluid page-title">
   <div class="container">
-
+    <div class="row">
+      <h1>{{title}}</h1>
+    </div>
+  </div>
+</div>
+<div class="container-fluid blog-container">
+  <div class="container">
+    <div class="row">
+      <app-section class="col-lg-3" *ngFor="let s of sections" [section]="s"></app-section>
+    </div>
   </div>
 </div>
