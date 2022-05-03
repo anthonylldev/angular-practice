@@ -8,6 +8,12 @@ import { WomenComponent } from './pages/women/women.component';
 import { NavbarCatalogComponent } from '../../shared/navbar-catalog/navbar-catalog.component';
 import { ItemComponent } from './components/item/item.component';
 import {FontAwesomeModule} from "@fortawesome/angular-fontawesome";
+import { TShirtsComponent } from './pages/t-shirts/t-shirts.component';
+import { JeansComponent } from './pages/jeans/jeans.component';
+import { ShoesComponent } from './pages/shoes/shoes.component';
+import { HatsComponent } from './pages/hats/hats.component';
+import { DressesComponent } from './pages/dresses/dresses.component';
+import { JacketsComponent } from './pages/jackets/jackets.component';
 
 
 @NgModule({
@@ -16,7 +22,13 @@ import {FontAwesomeModule} from "@fortawesome/angular-fontawesome";
     MenComponent,
     WomenComponent,
     NavbarCatalogComponent,
-    ItemComponent
+    ItemComponent,
+    TShirtsComponent,
+    JeansComponent,
+    ShoesComponent,
+    HatsComponent,
+    DressesComponent,
+    JacketsComponent
   ],
     imports: [
         CommonModule,

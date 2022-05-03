@@ -5,11 +5,11 @@ import {ItemService} from "../../../../core/services/item/item.service";
 import {SimpleItem} from "../../../../core/models/simpleItem.model";
 
 @Component({
-  selector: 'app-women',
-  templateUrl: './women.component.html',
-  styleUrls: ['./women.component.scss']
+  selector: 'app-jackets',
+  templateUrl: './jackets.component.html',
+  styleUrls: ['./jackets.component.scss']
 })
-export class WomenComponent implements OnInit {
+export class JacketsComponent implements OnInit {
   title: string = TypeCategory["women"]
   items: IItem[] = [];
 

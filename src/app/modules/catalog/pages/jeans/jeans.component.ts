@@ -5,12 +5,13 @@ import {ItemService} from "../../../../core/services/item/item.service";
 import {SimpleItem} from "../../../../core/models/simpleItem.model";
 
 @Component({
-  selector: 'app-women',
-  templateUrl: './women.component.html',
-  styleUrls: ['./women.component.scss']
+  selector: 'app-jeans',
+  templateUrl: './jeans.component.html',
+  styleUrls: ['./jeans.component.scss']
 })
-export class WomenComponent implements OnInit {
-  title: string = TypeCategory["women"]
+export class JeansComponent implements OnInit {
+
+  title: string = TypeCategory["jeans"]
   items: IItem[] = [];
 
   constructor(
@@ -25,7 +26,7 @@ export class WomenComponent implements OnInit {
     this.itemService.getSimpleItems().subscribe(
       (data) => {
         data.forEach((item) => {
-          if (item.categories.indexOf(TypeCategory["women"]) > -1) {
+          if (item.categories.indexOf(TypeCategory["jeans"]) > -1) {
             const addItem: IItem = new SimpleItem(
               item.id, item.name, item.categories, item.gender, item.image, item.price, item.discount, item.favourite
             )

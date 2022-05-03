@@ -1,6 +1,6 @@
 <div class="category-item" *ngIf="category">
-  <a href="">
+  <a [routerLink]="['catalog/'+category.categoryTitle]">
     <img class="img-fluid" [src]="'data:image/webp;base64,'+category.image.src" [alt]="category.image.alt">
   </a>
-  <h3>{{category.categoryTitle}}</h3>
+  <h3>{{category.categoryTitle | titlecase}}</h3>
 </div>

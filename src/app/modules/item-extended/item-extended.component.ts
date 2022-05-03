@@ -41,8 +41,12 @@ export class ItemExtendedComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    this.idItem = Number(this.route.snapshot.paramMap.get('idItem') ?? undefined)
+    this.getId();
     this.loadItem();
+  }
+
+  getId(): void {
+    this.idItem = Number(this.route.snapshot.paramMap.get('idItem') ?? undefined);
   }
 
   loadItem(): void {
@@ -53,6 +57,8 @@ export class ItemExtendedComponent implements OnInit {
             this.item = new Item(
               item.id,
               item.name,
+              item.categories,
+              item.gender,
               item.image,
               item.imageXS,
               item.colors,
