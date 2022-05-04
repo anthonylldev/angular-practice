@@ -4,6 +4,7 @@ export enum TypeCategory {
   "shoes" = "shoes",
   "hats" = "hats",
   "dresses" = "dresses",
+  "jackets" = "jackets",
   "most-sales" = "most-sales",
   "men" = "men",
   "women" = "women"

@@ -10,6 +10,13 @@ por si sirviera para subir nota. Recalco que esos commits son solo para subir no
 en el caso de que se pudiera, en caso contrario centrarse en la etiqueta
 anteriormente nombrada.
 
+En las categorías solo funciona las categorías ***T-shirt*** debido a la falta de tiempo,
+cuando en la pantalla ***Home*** pulsamos sobre la categoría y nos llevara a una pantalla
+en la que se muestran todas las ***T-shirt***, sin embargo si pulsamos sobre ***Catalog***
+nos aparecerá un apartado ***Most sales*** que nos mostrara los items que tengan dicha categoría
+de igual manera si pulsamos sobre el navegador de categorías nos llevará a las ***T-shirts***
+de *women* o de *men*
+
 ## Folder structure
 
 ### Core

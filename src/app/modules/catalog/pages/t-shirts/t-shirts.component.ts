@@ -36,8 +36,6 @@ export class TShirtsComponent implements OnInit {
               )
               this.items.push(addItem);
             }
-
-            this.title = item.gender + ' ' + TypeCategory["t-shirt"]
           } else  {
             if (item.categories.indexOf(TypeCategory["t-shirt"]) > -1) {
               const addItem: IItem = new SimpleItem(
